@@ -1,0 +1,56 @@
+.logo {
+    width: 120px;
+    height: 85px !important;
+}
+.page-main-header .main-header-right .main-header-left {
+    padding: 0px 10px 0px 40px !important;
+    border-right: 0px !important;
+    width: 400px !important;
+}
+.page-wrapper.compact-wrapper .page-body-wrapper .page-body{
+    margin-left: 0px !important;
+}
+/* Navigation List Styling */
+.nav-list {
+    list-style: none;
+    display: flex;
+    padding: 0 !important;
+    margin: 0;
+}
+.page-main-header .main-header-right .left-menu-header {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 35%;
+    flex: 0 0 50% !important;
+}
+.nav-list li {
+    margin-right: 40px !important;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+    padding: 0px !important;
+}
+
+.nav-link:hover {
+    color: #ff6c00; /* Change color on hover */
+}
+
+/* Underline Animation */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ff6c00; /* Line color */
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
