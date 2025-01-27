@@ -21,7 +21,10 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/icofont.css">
     <!-- Themify icon-->
     <link rel="stylesheet" type="text/css" href="../assets/css/themify.css">
+    <!-- My style Css-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/mystyle.css">
     <!-- Flag icon-->
+
     <link rel="stylesheet" type="text/css" href="../assets/css/flag-icon.css">
     <!-- Feather icon-->
     <link rel="stylesheet" type="text/css" href="../assets/css/feather-icon.css">
