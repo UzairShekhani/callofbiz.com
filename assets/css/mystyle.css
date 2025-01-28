@@ -50,7 +50,14 @@
     bottom: -5px;
     transition: width 0.3s ease;
 }
+.btn-theme{
+    background-color: #ff6c00 !important;
+}
+.btn-theme:hover{
+    background-color: #d67e40 !important;
+    color: white !important;
 
+}
 .nav-link:hover::after {
     width: 100%;
 }

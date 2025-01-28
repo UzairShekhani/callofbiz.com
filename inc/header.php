@@ -21,16 +21,16 @@
                 <div class="left-menu-header col">
                     <ul class="nav-list">
                         <li class="text-dark">
-                            <a href="home" class="nav-link text-dark fontbold-600 f-16 p-auto">Home</a>
+                            <a href="index.php" class="nav-link text-dark fontbold-600 f-16 p-auto">Home</a>
                         </li>
                         <li class="text-dark">
-                            <a href="home" class="nav-link text-dark fontbold-600 f-16 p-auto">Services</a>
+                            <a href="index.php" class="nav-link text-dark fontbold-600 f-16 p-auto">Services</a>
                         </li>
                         <li class="text-dark">
-                            <a href="home" class="nav-link text-dark fontbold-600 f-16 p-auto">Blogs</a>
+                            <a href="index.php" class="nav-link text-dark fontbold-600 f-16 p-auto">Blogs</a>
                         </li>
                         <li class="text-dark">
-                            <a href="home" class="nav-link text-dark fontbold-600 f-16 p-auto">Contact Us</a>
+                            <a href="index.php" class="nav-link text-dark fontbold-600 f-16 p-auto">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -142,8 +142,8 @@
                             </ul>
                         </li> -->
                         <li class="onhover-dropdown p-0">
-                            <button class="btn btn-primary-light" type="button"><a href="login_two.html"><i
-                                        data-feather="log-out"></i>Log out</a></button>
+                            <a class="btn btn-theme" href="login_two.html"><i
+                                        data-feather="log-out"></i>Log out</a>
                         </li>
                     </ul>
                 </div>
