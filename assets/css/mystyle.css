@@ -1,63 +1,293 @@
+/* Body and header styles */
+body,
+.page-wrapper .page-main-header,.card,.card-header {
+  background-color: #f5f7fb !important;
+}
+
 .logo {
-    width: 120px;
-    height: 85px !important;
+  width: 150px;
+  height: 150px !important;
 }
 .page-main-header .main-header-right .main-header-left {
-    padding: 0px 10px 0px 40px !important;
-    border-right: 0px !important;
-    width: 400px !important;
+  padding: 0px 10px 0px 40px !important;
+  border-right: 0px !important;
+  width: 330px !important;
+  height: 0px;
 }
-.page-wrapper.compact-wrapper .page-body-wrapper .page-body{
-    margin-left: 0px !important;
+.page-wrapper.compact-wrapper .page-body-wrapper .page-body,
+footer {
+  margin-left: 0px !important;
 }
+
 /* Navigation List Styling */
 .nav-list {
-    list-style: none;
-    display: flex;
-    padding: 0 !important;
-    margin: 0;
+  list-style: none;
+  display: flex;
+  padding: 0 !important;
+  margin: 0;
+  align-items: center;
 }
 .page-main-header .main-header-right .left-menu-header {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 35%;
-    flex: 0 0 50% !important;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 35%;
+  flex: 0 0 70% !important;
 }
 .nav-list li {
-    margin-right: 40px !important;
+  margin-right: 40px !important;
 }
 
 .nav-link {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    position: relative;
-    transition: color 0.3s ease;
-    padding: 0px !important;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+  padding: 0px !important;
 }
 
 .nav-link:hover {
-    color: #ff6c00; /* Change color on hover */
+  color: #ff6c00; /* Change color on hover */
 }
 
 /* Underline Animation */
 .nav-link::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: #ff6c00; /* Line color */
-    left: 0;
-    bottom: -5px;
-    transition: width 0.3s ease;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ff6c00; /* Line color */
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
 }
-.btn-theme{
-    background-color: #ff6c00 !important;
-}
-.btn-theme:hover{
-    background-color: #d67e40 !important;
-    color: white !important;
 
-}
 .nav-link:hover::after {
-    width: 100%;
+  width: 100%;
+}
+
+/* indexpage */
+.background_pic {
+  position: relative; /* Ensure the container is the reference point for the overlay */
+  background-image: url(../images/blog/bg.jpg);
+  border: 1px solid #ccc;
+  border-bottom: none;
+  padding: 20px 20px 80px 20px;
+  border-radius: 20px;
+  box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.2),
+    -5px -5px 10px rgba(0, 0, 0, 0.2);
+}
+.background_pic::before {
+  content: ""; /* Required for pseudo-elements */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  border-radius: 20px; /* Matching the border radius */
+  z-index: 1; /* Ensure the overlay is above the background but below the content */
+}
+
+.background_pic > * {
+  position: relative;
+  z-index: 2; /* Content (text) appears above the overlay */
+}
+
+/* Main page body and header layout */
+.page-wrapper .page-body-wrapper .page-body {
+  min-height: calc(100vh - 76px);
+  margin-top: 20px !important;
+  padding: 0px !important;
+}
+.page-main-header {
+  position: inherit !important;
+  z-index: 0 !important;
+}
+.w-58 {
+  width: 58%;
+}
+
+.font-09{
+  font-size: 9px !important;
+}
+.font-10{
+  font-size: 10px !important;
+}
+
+/* Ensure the sections are directly next to each other */
+.shortest {
+  position: relative; /* Removed absolute positioning to ensure it flows below */
+  z-index: 99999;
+  left: 0;
+  width: 100%;
+  margin-top: -50px; /* Remove gap between the sections */
+}
+
+/* Remove the bottom margin from .bg */
+.bg {
+  margin-bottom: 0; /* Ensure there is no space between sections */
+}
+.bg-short {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  border-radius: 20px;
+  background-color: #333;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Initial shadow */
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.bg-short:hover {
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5); /* Stronger shadow with downward "drop" effect */
+  transform: translateY(5px); /* Box drops slightly down */
+}
+
+
+/* Optional: Add padding or other styles to improve layout */
+.bg-short img {
+  max-width: 100%;
+  height: auto;
+}
+.rounded-4{
+border-radius: 35px;
+}
+/* button */
+.btn-outline-theme {
+  border-color: #ff6c00;
+  color: #ba895d;
+  background-color: transparent;
+}
+.btn-outline-theme:hover, .btn-outline-theme:focus, .btn-outline-theme:active, .btn-outline-theme.active {
+  color: white;
+  background-color: #ff6c00 !important;
+  border-color: #ff6c00 !important;
+}
+.btn-theme,.pricing-block .pricing-header .price-box {
+  background-color: #ff6c00 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+.btn-theme:hover {
+  background-color: #d67e40 !important;
+  color: white !important;
+}
+.text {
+  color: #ff6c00 !important;
+}
+
+/* testmonails */
+.testimonial-card {
+  max-width: 600px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05);
+}
+
+.testimonial-btn {
+  background-color: #ff6c00 !important;
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.testimonial-btn:hover {
+  background-color: #e65c00 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .testimonial-card {
+      max-width: 90%;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+      width: 40px !important;
+      height: 40px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonial-card {
+      max-width: 100%;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+      width: 35px !important;
+      height: 35px !important;
+  }
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    display: inline-block;
+    width: 20px !important;
+    height: 1rem !important;
+}
+}
+
+/* General Styles for Sections */
+section {
+  opacity: 0;
+  transform: translateY(50px);  /* Start from a lower position */
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional: Add Scale Effect for More Dynamic Animations */
+section.visible.scale-up {
+  opacity: 1;
+  transform: translateY(0) scale(1.05);  /* Slight scaling for a zoom effect */
+}
+
+/* Apply staggered delays for text inside sections */
+section h1, section h2, section p {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* Animate the text inside the section when it's visible */
+section.visible h1 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s; /* Delay for heading */
+}
+
+section.visible h2 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s; /* Delay for subheading */
+}
+
+section.visible p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.7s; /* Delay for paragraph */
+}
+
+/* Optional: Add specific animations to buttons */
+section.visible .btn {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition-delay: 1s; /* Delay for button */
+}
+
+/* Custom class for animation on second section (add more as needed) */
+section:nth-child(odd).visible {
+  transform: translateY(0) scale(1.05);
+}
+
+section:nth-child(even).visible {
+  transform: translateY(0) scale(1.02);
 }
